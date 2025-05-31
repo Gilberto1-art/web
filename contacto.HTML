@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guatemala Turística</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("imagenes de pagina web/imagen11.jpg"); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    header {
+      background-color: rgba(26, 86, 175, 0.9); 
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    main {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8); 
+      margin: 20px;
+      border-radius: 15px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select {
+      margin-top: 10px;
+      padding: 5px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Guatemala Turística</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>	
+        <li><a href="Videos.html">Videos</a></li>
+        <li><a href="Ubicaciones.html">Ubicaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explora Lugares Espectaculares</h2>
+
+    <h3>Contacto de Página</h3>
+    <form action="" method="post">
+      <label for="Nombre">Nombre:</label><br>
+      <input type="text" id="Nombre" name="Nombre" required><br><br>
+
+      <label for="tipo">Tipo de Solicitud:</label><br>
+      <select id="tipo" name="tipo">
+        <option value="Solicitud">Solicitud</option>
+        <option value="Acampar">Acampar</option>
+        <option value="Visitar">visitar</option>
+        <option value="Explorar">Explorar</option>
+      </select><br><br>
+
+      <label for="Correo">Correo:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="A donde quieres ir">A donde quieres ir:</label><br>
+      <select id="lugar" name="lugar">
+        <option value="Lugar">Lugar</option>
+        <option value="Antigua">Antigua Guatemala</option>
+        <option value="Tikal">Tikal</option>
+        <option value="Volcan">Volcán de Fuego</option>
+        <option value="Semuc">Semuc Champey</option>
+      </select><br><br>
+
+      <label for="País">País:</label><br>
+      <input type="text" id="Pais" name="Pais" required><br><br>
+
+      <label for="Descripción">Descripción:</label><br>
+      <textarea name="desc" id="desc" rows="5" cols="33"></textarea><br><br>
+
+      <input type="submit" value="Enviar Solicitud">
+    </form>
+  </main>
+  <a href="https://wa.me/50255410595" class="whatsapp-float" target="_blank" title="Chatea con nosotros por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    © 2025 Guatemala Turística
+  </footer>
+
+</body>
+</html>
