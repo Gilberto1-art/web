@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guatemala Turística</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: white;
+      position: relative;
+    }
+
+    .video-fondo {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    header {
+      background-color: rgba(26, 86, 175, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .titulo-logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    .logo {
+      width: 80px;
+      border-radius: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    main h2 {
+      font-size: 2em;
+      color: #FFD700;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(26, 86, 175, 0.8);
+      z-index: 1;
+      position: relative;
+    }
+
+    .redes-flotantes {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+
+    .redes-flotantes a {
+      width: 50px;
+      height: 50px;
+      color: white;
+      border-radius: 50%;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .facebook { background: #3b5998; }
+    .instagram { background: #e1306c; }
+    .whatsapp { background: #25D366; }
+
+    .redes-flotantes a:hover {
+      opacity: 0.8;
+    }
+
+    .boton-experiencia {
+      position: fixed;
+      bottom: 25px;
+      left: 20px;
+      background-color: #FFD700;
+      color: black;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    .boton-experiencia:hover {
+      background-color: #e6c200;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .modal-contenido {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      color: black;
+    }
+
+    .modal-contenido h3 {
+      margin-top: 0;
+    }
+
+    .modal-contenido input,
+    .modal-contenido textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .modal-contenido button {
+      padding: 10px 20px;
+      background-color: #1a56af;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .modal-contenido button:hover {
+      background-color: #144a96;
+    }
+
+    .cerrar {
+      float: right;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <video class="video-fondo" autoplay muted loop playsinline>
+    <source src="Video/vid5.mp4" type="video/mp4" />
+    Tu navegador no soporta la reproducción de video.
+  </video>
+
+  <header>
+    <div class="titulo-logo">
+      <img src="imagenes de pagina web/imagen11.jpg" alt="Bandera de Guatemala" class="logo" />
+      <h1>Guatemala Turística</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio <span class="material-symbols-outlined">home</span></a></li>
+        <li><a href="videos.html">Videos <span class="material-symbols-outlined">arrow_drop_down_circle</span></a></li>
+        <li><a href="ubicaciones.html">Ubicaciones <span class="material-symbols-outlined">location_on</span></a></li>
+        <li><a href="contacto.html">Contacto <span class="material-symbols-outlined">call</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explora Guatemala</h2>
+  </main>
+
+  <div class="redes-flotantes">
+    <a href="https://www.facebook.com/tu_pagina" class="facebook" target="_blank" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/tu_usuario" class="instagram" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/50255410595" class="whatsapp" target="_blank" title="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <div class="boton-experiencia" onclick="abrirModal()">CUÉNTANOS TU EXPERIENCIA EN GUATEMALA</div>
+
+  <div id="modalFormulario" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <h3>Comparte tu experiencia en Guatemala</h3>
+      <form onsubmit="enviarComentario(event)">
+        <input type="text" placeholder="Tu nombre" required />
+        <textarea placeholder="Escribe tu experiencia aquí..." rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Guatemala Turística  
+    Gilberto Gonzalez 
+  </footer>
+  <script>
+    function abrirModal() {
+      document.getElementById('modalFormulario').style.display = 'block';
+    }
+
+    function cerrarModal() {
+      document.getElementById('modalFormulario').style.display = 'none';
+    }
+
+    function enviarComentario(e) {
+      e.preventDefault();
+      alert("¡Gracias por compartir tu experiencia!");
+      cerrarModal();
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('modalFormulario');
+      if (event.target == modal) {
+        cerrarModal();
+      }
+    }
+  </script>
+
+</body>
+</html>

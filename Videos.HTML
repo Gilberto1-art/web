@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guatemala Turística</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("imagenes de pagina web/imagen11.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    header {
+      background-color: rgba(92, 90, 238, 0.95);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    h1, h2, p {
+      color: #fff;
+      text-shadow: 1px 1px 2px black;
+      text-align: center;
+    }
+
+    .galeria-videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .video-container {
+      background-color: rgba(216, 226, 222, 0.9);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      padding: 10px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      border: 2px solid saddlebrown;
+    }
+
+    footer {
+      background-color: rgba(92, 90, 238, 0.95);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Guatemala Turística</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>	
+        <li><a href="Videos.html">Videos</a></li>
+        <li><a href="Ubicaciones.html">Ubicaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Conoce los lugares más hermosos de Guatemala explorados</h2>
+
+    <div class="galeria-videos">
+
+      <div class="video-container">
+        <h3>Volcán de Fuego</h3>
+        <video controls>
+          <source src="Video/Vid.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <p>Guatemala Corazón del Mundo Maya</p>
+      </div>
+
+      <div class="video-container">
+        <h3>Antigua Guatemala</h3>
+        <video controls>
+          <source src="Video/vid1.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <p>Guatemala Corazón del Mundo Maya</p>
+      </div>
+
+      <div class="video-container">
+        <h3>Tikal Petén</h3>
+        <video controls>
+          <source src="Video/vid3.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <p>Guatemala Corazón del Mundo Maya</p>
+      </div>
+
+      <div class="video-container">
+        <h3>Semuc Champey</h3>
+        <video controls>
+          <source src="Video/vid2.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
+        <p>Guatemala Corazón del Mundo Maya</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Guatemala Turística
+  </footer>
+
+</body>
+</html>

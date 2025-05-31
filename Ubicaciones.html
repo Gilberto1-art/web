@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guatemala Turística</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-image: url("imagenes%20de%20pagina%20web/imagen11.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: rgba(26, 86, 175, 0.9);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      border-radius: 20px;
+    }
+
+    main h2 {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .galeria-ubicaciones {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px 0;
+    }
+
+    .fila {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 600px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 12px;
+    }
+
+    iframe {
+      border-radius: 12px;
+      border: 0;
+      width: 100%;
+      height: 250px;
+      max-width: 100%;
+    }
+
+    .boton-link {
+      display: inline-block;
+      background-color: #FFD700;
+      color: black;
+      padding: 14px 24px;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .boton-link:hover {
+      background-color: #e6c200;
+    }
+
+    footer {
+      background-color: rgba(11, 76, 240, 0.9);
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Guatemala Turística</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>  
+        <li><a href="Videos.html">Videos</a></li>
+        <li><a href="Ubicaciones.html">Ubicaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explora Lugares Espectaculares</h2>
+
+    <div class="galeria-ubicaciones">
+
+      <div class="fila">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1748115446823!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ2w2ZWFxalFF!2m2!1d14.47468990991003!2d-90.88063461718568!3f120.77584!4f0!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="boton-link" href="https://www.volcanacatenango.com.gt/recomendaciones-para-visitar-volcan-acatenango" target="_blank">Recomendaciones para visitar el Volcán de Fuego</a>
+      </div>
+
+      <div class="fila">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1748115997795!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJREd0UF9TN2dF!2m2!1d14.55959197759597!2d-90.73413798803473!3f337.9139815941212!4f-7.612490207003503!5f0.43774151558641733" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="boton-link" href="https://www.trivago.com/es-US/lm?themeId=11&search=200-64390&sem_keyword=buscar%20hoteles%20en%20antigua%20guatemala&sem_creativeid=716286435583" target="_blank">Recomendaciones para visitar Antigua Guatemala</a>
+      </div>
+
+      <div class="fila">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1748116046878!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRE0xZUdyS0E.!2m2!1d17.224894058586!2d-89.611037765247!3f154.52870284832875!4f4.363014550311291!5f0.4000000000000002" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="boton-link" href="https://www.trivago.com/es-US/lm/hoteles-cerca-de-parque-nacional-tikal?search=500-136355" target="_blank">Recomendaciones para visitar Tikal, Petén</a>
+      </div>
+
+      <div class="fila">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1748116185710!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJRDRwUExJbFFF!2m2!1d15.53303518961421!2d-89.95996000378236!3f43.39418218940135!4f-4.765307410823681!5f1.1668804491323164" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="boton-link" href="https://www.trivago.com/es-US/opr/hoteles-cerca-de-semuc-champey?search=500-1405826" target="_blank">Recomendaciones para visitar Semuc Champey</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Guatemala Turística
+  </footer>
+
+</body>
+</html>
